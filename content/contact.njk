@@ -6,7 +6,7 @@ eleventyNavigation:
 
 ---
 
-<form netlify name="contact" method>
+<form netlify name="contact" method="POST">
   <div class="mb-3 mt-3">
     <label for="uname" class="form-label">Username:</label>
     <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -25,6 +25,10 @@ eleventyNavigation:
     <div class="valid-feedback">Valid.</div>
     <div class="invalid-feedback">Please fill out this field.</div>
   </div>
+  <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
   <div class="form-check mb-3">
     <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
     <label class="form-check-label" for="myCheck">I'm not a robot.</label>
